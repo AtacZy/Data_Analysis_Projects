@@ -1,0 +1,12 @@
+# Папки с распакованными данными (игнорируем)
+Аптеки/
+Входящие/
+
+# Jupyter
+.ipynb_checkpoints/
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/

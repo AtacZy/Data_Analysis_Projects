@@ -1,0 +1,52 @@
+# Из проекта "Автоматизация обработки данных торговых сетей"
+venv/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+
+# Из проекта "Автоматизированный ETL-пайплайн для выгрузки данных из API"
+config.py
+credentials.json
+*.key
+*.pem
+.env
+.secrets
+venv/
+env/
+.venv/
+ENV/
+logs/
+*.log
+*.xlsx
+*.csv
+*.eml
+!reports/*.xlsx
+!reports/*.csv
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+
+# Из проекта "Анализ сервиса доставки"
+# gitignore отсутствовал — ничего не добавляем
+
+# Из проекта "Выгрузка и обработка накладных из 1c"
+Аптеки/
+Входящие/
+.ipynb_checkpoints/
+*.pyc
+__pycache__/
+.vscode/
+.idea/

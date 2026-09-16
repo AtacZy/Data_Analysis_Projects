@@ -1,0 +1,19 @@
+# ─── Power BI ───
+*.pbix.bak
+*.pbix.tmp
+~$*.pbix
+
+# ─── Excel (временные файлы Office) ───
+~$*.xlsx
+~$*.xls
+*.tmp
+*.bak
+
+# ─── OS ───
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE ───
+.vscode/
+.idea/

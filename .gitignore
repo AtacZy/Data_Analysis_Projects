@@ -1,52 +1,78 @@
-# Из проекта "Автоматизация обработки данных торговых сетей"
-venv/
-__pycache__/
-*.pyc
-*.log
-.DS_Store
-
-# Из проекта "Автоматизированный ETL-пайплайн для выгрузки данных из API"
-config.py
-credentials.json
-*.key
-*.pem
-.env
-.secrets
-venv/
-env/
-.venv/
-ENV/
-logs/
-*.log
-*.xlsx
-*.csv
-*.eml
-!reports/*.xlsx
-!reports/*.csv
+# ─── Python ───
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
 .Python
 build/
 dist/
 *.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ─── Jupyter ───
+.ipynb_checkpoints/
+*.ipynb_checkpoints*
+
+# ─── IDE ───
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
+*.sublime-workspace
+
+# ─── OS ───
 .DS_Store
 Thumbs.db
+desktop.ini
 Desktop.ini
+
+# ─── Секреты и окружение ───
+# НЕ игнорируем config.py глобально — может быть нужен
+.env
+.env.local
+*.env
+!.env.example
+.secrets
+credentials.json
+*.key
+*.pem
+
+# ─── Логи и временные ───
+*.log
+logs/
 *.tmp
+*.temp
 *.bak
 
-# Из проекта "Анализ сервиса доставки"
-# gitignore отсутствовал — ничего не добавляем
+# ─── Excel / Office: только ВРЕМЕННЫЕ файлы ───
+# Сами .xlsx / .csv — часть проектов, НЕ игнорируем!
+~$*.xlsx
+~$*.xls
+~$*.docx
+~$*.pptx
 
-# Из проекта "Выгрузка и обработка накладных из 1c"
-Аптеки/
-Входящие/
-.ipynb_checkpoints/
-*.pyc
-__pycache__/
-.vscode/
-.idea/
+# ─── Power BI: только бэкапы ───
+# Сам .pbix — артефакт проекта, НЕ игнорируем!
+*.pbix.bak
+*.pbix.tmp
+~$*.pbix
+
+# ─── Docker ───
+docker-compose.override.yml
+
+# ─── Node (на будущее) ───
+node_modules/
+npm-debug.log*
+
+# ─── Кэши инструментов ───
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.cache/
